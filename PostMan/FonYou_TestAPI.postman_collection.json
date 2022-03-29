@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "11d625dd-363c-4f8b-8ea5-39702ecd0529",
+		"name": "FonYou_TestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "findAllEstudiantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/estudiante/findAllEstudiantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudiante",
+								"findAllEstudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllExamenes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/examen/getAllExamenes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"examen",
+								"getAllExamenes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "createEstudiante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"nombre\": \"Carlos Velez\",\n        \"edad\": 24,\n        \"ciudad\": \"Caldas\",\n        \"zonaHoraria\": \"GMT-5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudiante/createEstudiante",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudiante",
+								"createEstudiante"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveExamen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"nombre\": \"Examen_Sara\",\n        \"fechaExamen\": \"2022-09-17T05:00:00.000+00:00\",\n        \"preguntas\": [\n            {\n                \"enunciado\": \"Enunciado de prueba\",\n                \"puntaje\": 25.0,\n                \"respuestas\": [\n                    {\n                        \"contenido\": \"No\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"No\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"Si\",\n                        \"correct\": true\n                    },\n                    {\n                        \"contenido\": \"No\",\n                        \"correct\": false\n                    }\n                ]\n            },\n            {\n                \"enunciado\": \"¿Cual es el antónimo de rico?\",\n                \"puntaje\": 25.0,\n                \"respuestas\": [\n                    {\n                        \"contenido\": \"Multimillonario\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"Pobreza\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"Millonario\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"Pobre\",\n                        \"correct\": true\n                    }\n                ]\n            },\n            {\n                \"enunciado\": \"¿Cuál es el planeta más cercano al Sol?\",\n                \"puntaje\": 25.0,\n                \"respuestas\": [\n                    {\n                        \"contenido\": \"Mercurio\",\n                        \"correct\": true\n                    },\n                    {\n                        \"contenido\": \"Pluton\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"Venus\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"Tierra\",\n                        \"correct\": false\n                    }\n                ]\n            },\n            {\n                \"enunciado\": \"¿Cuántos minutos tiene un día?\",\n                \"puntaje\": 25.0,\n                \"respuestas\": [\n                    {\n                        \"contenido\": \"1111 Mins.\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"1680 Mins.\",\n                        \"correct\": false\n                    },\n                    {\n                        \"contenido\": \"1440 Mins.\",\n                        \"correct\": true\n                    },\n                    {\n                        \"contenido\": \"1200 Mins.\",\n                        \"correct\": false\n                    }\n                ]\n            }\n        ]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/examen/saveExamen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"examen",
+								"saveExamen"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

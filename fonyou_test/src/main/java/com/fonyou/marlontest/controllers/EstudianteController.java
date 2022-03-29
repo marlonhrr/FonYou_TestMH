@@ -25,6 +25,7 @@ public class EstudianteController {
     }
 
     /**
+     * Recurso encargado de creear un estudiante.
      * @return
      */
     @PostMapping("/createEstudiante")

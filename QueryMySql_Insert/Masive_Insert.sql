@@ -12,12 +12,12 @@ INSERT INTO db_fonyouTest.Tb_Estudiante (ciudad,edad,nombre,zonaHoraria)
 VALUES ("Santa Elena",30,"Horacio","GMT-5");
 
 -- Insert para examenes
-INSERT INTO db_fonyouTest.Tb_Examen (calificacion,nombre,fechaExamen)
-VALUES (0.0,"Examen_Sara",'2022-09-17');
-INSERT INTO db_fonyouTest.Tb_Examen (calificacion,nombre,fechaExamen)
-VALUES (0.0,"Examen_Marlon",'2022-09-17');
-INSERT INTO db_fonyouTest.Tb_Examen (calificacion,nombre,fechaExamen)
-VALUES (0.0,"Examen_Horacio",'2022-09-17');
+INSERT INTO db_fonyouTest.Tb_Examen (nombre,fechaExamen)
+VALUES ("Examen_Sara",'2022-09-17');
+INSERT INTO db_fonyouTest.Tb_Examen (nombre,fechaExamen)
+VALUES ("Examen_Marlon",'2022-09-17');
+INSERT INTO db_fonyouTest.Tb_Examen (nombre,fechaExamen)
+VALUES ("Examen_Horacio",'2022-09-17');
 
 -- Insert para preguntas
 INSERT INTO db_fonyouTest.Tb_Pregunta (enunciado,puntaje,examen_id)
